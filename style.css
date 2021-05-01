@@ -2,3 +2,91 @@
     margin: 0;
     padding: 0;
 }
+header{
+    display:flex;
+    flex-direction: column-reverse;
+}
+.logo{
+    width: 80px;
+    height: 80px;
+    background-color: blue;
+    border-radius: 50%;
+    align-self: center;
+    margin-bottom: 20px;
+
+}
+nav{
+    display: flex;
+    background-color: blue;
+    height: 60px;
+    justify-content: space-around;
+    font-size: 30px;
+    
+}
+a{
+    background-color: green;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    text-decoration: none;
+}
+main{
+    display: flex;
+    flex-direction: column;
+
+}
+.seccion{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    align-items: center;
+}
+.imagen{
+    height: 70px;
+    width: 90%;
+    background-color: orange;
+    align-self: center;
+}
+
+.imagen2{
+    background-color: green;
+}
+.contenido{
+    width: 90%;
+    font-size: 20px;
+}
+.seccion-desaparecer{
+    display: none;
+}
+footer{
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    color:white;
+    background-color: blue;
+    padding: 10px;
+}
+@media (min-width: 768px) {
+    main{
+        flex-direction: row;
+    }
+    .imagen{
+        height: 150px;
+    }
+
+}
+@media (min-width: 1200px) {
+    header{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .seccion-desaparecer{
+        display: block;
+    }
+    .seccion{
+        margin-bottom: 20px;
+    }
+    .logo{
+        margin-right: 30px;
+    }
+}
